@@ -4,42 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Roomify</title>
+    <title>Roomify - Next-Gen Video Meetings & AI Collaboration</title>
 
-    <link rel="stylesheet" href="css/style.css">
-
+    <!-- Clean Favicons (SVG Vector & High-Res PNG) -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon.png">
 
+    <!-- Fonts: Google Fonts Poppins with multiple weights -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Clean Icons: Bootstrap Icons (No emojis) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- Master Modern Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-
+    <!-- ==========================================================================
+         HEADER / NAVBAR
+         ========================================================================== -->
+    <header id="main-header">
         <div class="logo-brand">
-            <img src="img/favicon.png" alt="">
-
+            <img src="img/favicon.svg" alt="Roomify Logo">
             <p>Roomify</p>
         </div>
 
         <nav class="navigator">
-
             <ul class="header-list">
-
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="#two">Festival</a> </li>
-                <li> <a href="donwload.html">Download</a> </li>
-                <li> <a href="#six">Plus & Pridge</a> </li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#two">Festival</a></li>
+                <li><a href="#third">Solutions</a></li>
+                <li><a href="donwload.html">Download</a></li>
+                <li><a href="#six">Plus & Pridge</a></li>
+                <li><a href="#five">FAQs</a></li>
             </ul>
 
             <div class="user-buttons">
-                <button id="sing"> Sing in</button>
-                <button id="login"> Login</button>
+                <button id="sing"><i class="bi bi-person-plus"></i> Sign in</button>
+                <button id="login"><i class="bi bi-box-arrow-in-right"></i> Login</button>
             </div>
         </nav>
 
-        <div class="responsivy">
+        <div class="responsivy" aria-label="Toggle navigation menu" role="button" tabindex="0">
             <span></span>
             <span></span>
             <span></span>
@@ -48,832 +59,1156 @@
 
     <main>
 
+        <!-- ==========================================================================
+             HERO SECTION (SECTION 1)
+             ========================================================================== -->
         <section class="first-section show-scroll" id="one">
 
             <div class="left-area">
-    
-                <h1>Supercharge your meetings and made it effective</h1>
-    
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur ea nisi</p>
-    
-                <button onclick="gotoDonw()">Start meeting now</button>
-            </div>
-    
-            <div class="right-area">
-               <div class="back-part">
-    
-                    <div class="back-bools">
-                        <span> <i class="bi bi-stopwatch"></i> </span>
-                        <span> <i class="bi bi-arrow-up-right-circle"></i> </span>
-                        <span> <i class="bi bi-camera-reels"></i> </span>
-                        <span> <i class="bi bi-calendar-date"></i> </span>
-                        <span> <i class="bi bi-arrows-fullscreen"></i></span>
-                        <span> <i class="bi bi-shuffle"></i></span>
-                        <span> <i class="bi bi-box-arrow-in-right"></i> </span>
+                <span class="hero-pill">
+                    <i class="bi bi-stars"></i> Powered by Roomify AI 2.0
+                </span>
+
+                <h1>Supercharge your meetings and <span class="gradient-text">make them effective</span></h1>
+
+                <p>Experience crystal-clear video conferencing, automated live summaries, and real-time collaboration designed for high-performance remote and hybrid teams.</p>
+
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="gotoDonw()">
+                        <i class="bi bi-camera-video-fill"></i> Start meeting now
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('third')">
+                        <i class="bi bi-play-circle-fill"></i> Explore features
+                    </button>
+                </div>
+
+                <div class="hero-proof">
+                    <div class="proof-avatars">
+                        <img src="img/cara2.jfif" alt="Active user">
+                        <img src="img/cara3.jfif" alt="Active user">
+                        <img src="img/cara4.jfif" alt="Active user">
+                        <img src="img/cara5.jfif" alt="Active user">
+                        <div class="avatar-more">+12k</div>
                     </div>
-    
-                    <div class="back-top">
-    
-                        <div class="top-more">
-                            <div class="top-options">
-                                <p> <span>%</span> Lorem ipsum</p>
-                                <span> <i class="bi bi-caret-right-fill"></i> </span>
-                                <p> <span>%</span> Handern 1</p>
-                            </div>
-    
-                            <p>Call me booking soon</p>
+                    <div class="proof-text">
+                        <div class="proof-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
                         </div>
-    
-                        <div class="calls">
-                            <img src="img/call-me.jpg" alt="">
-    
-                            <div class="phone-number">
-                                +35 56 22 01
-                            </div>
-    
-                            <div class="image">
-                                <img src="img/cara4.jfif" alt="">
-                            </div>
-    
-                            <div class="call-buttons">
-                                <span> <i class="bi bi-mic-mute"></i> </span>
-                                <span> <i class="bi bi-camera-video"></i> </span>
-                                <span> <i class="bi bi-camera-video-off"></i> </span>
-                                <span> <i class="bi bi-record2"></i> </span>
-                            </div>
-    
-                            <div class="participants">
-                                 <img src="img/cara2.jfif" alt="">
-                                 <img src="img/cara3.jfif" alt="">
-                                 <img src="img/cara5.jfif" alt="">
-                                 <span>3+</span>
-                            </div>
-                        </div>
-                    </div>
-    
-               </div>
-            </div>
-        </section>
-    
-        <section class="second-section" id="two">
-    
-            <div class="used">
-    
-                <h1>Used by professionals on</h1>
-    
-                <div class="logs">
-    
-                    <div>
-                        <img src="img/logo1.png" alt="">
-    
-                        <img src="img/logo2.png" alt="" id="special">
-                    </div>
-    
-                    <div>
-                        <img src="img/logo3.png" alt="">
-    
-                        <img src="img/logo4.png" alt="">
-                    </div>
-    
-                    <div>
-                        <img src="img/logo5.png" alt="">
-    
-                        <img src="img/logo6.png" alt="">
+                        <strong>4.9/5</strong> rating from 50,000+ teams worldwide
                     </div>
                 </div>
             </div>
-    
+
+            <div class="right-area">
+                <!-- Modern Realistic Video Meeting UI Window -->
+                <div class="meeting-window">
+                    
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="window-title">
+                            <i class="bi bi-people-fill"></i> Sprint Planning & Product Review
+                        </div>
+                        <div class="live-badge">
+                            <span class="pulse-dot"></span> 00:34:12 REC
+                        </div>
+                    </div>
+
+                    <div class="video-canvas">
+                        <img src="img/call-me.jpg" class="main-stream" alt="Active video conference speaker">
+
+                        <!-- Floating PiP Attendees -->
+                        <div class="pip-participants">
+                            <div class="pip-tile" title="Marcus Vance">
+                                <img src="img/cara2.jfif" alt="Marcus">
+                                <span class="mic-status"><i class="bi bi-mic-fill"></i></span>
+                            </div>
+                            <div class="pip-tile" title="Elena Rostova">
+                                <img src="img/cara3.jfif" alt="Elena">
+                                <span class="mic-status muted"><i class="bi bi-mic-mute-fill"></i></span>
+                            </div>
+                            <div class="pip-tile" title="David Chen">
+                                <img src="img/cara7.jfif" alt="David">
+                                <span class="mic-status"><i class="bi bi-mic-fill"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- Active Speaker Label -->
+                        <div class="speaker-tag">
+                            <div class="audio-waves">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>Sarah Jenkins (Host)</span>
+                        </div>
+
+                        <!-- HD Tag -->
+                        <div class="quality-tag">
+                            <i class="bi bi-badge-hd-fill"></i> 1080p 60fps
+                        </div>
+                    </div>
+
+                    <!-- Floating AI Intelligence Card -->
+                    <div class="ai-note-card">
+                        <div class="ai-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <div class="ai-text">
+                            <strong>Roomify AI Assistant</strong>
+                            <span>"Key decision: Launch Q3 beta on Nov 25th"</span>
+                        </div>
+                    </div>
+
+                    <!-- Clean Dock Control Bar -->
+                    <div class="call-dock">
+                        <div class="dock-left">
+                            <button class="dock-btn active" title="Microphone Active">
+                                <i class="bi bi-mic-fill"></i>
+                            </button>
+                            <button class="dock-btn active" title="Camera Active">
+                                <i class="bi bi-camera-video-fill"></i>
+                            </button>
+                        </div>
+
+                        <div class="dock-center">
+                            <button class="dock-btn" title="Share Screen">
+                                <i class="bi bi-display"></i>
+                            </button>
+                            <button class="dock-btn" title="Open Meeting Chat">
+                                <i class="bi bi-chat-left-text-fill"></i>
+                            </button>
+                            <button class="dock-btn" title="Raise Hand">
+                                <i class="bi bi-hand-index-thumb"></i>
+                            </button>
+                            <button class="dock-btn" title="Security & Encryption">
+                                <i class="bi bi-shield-check"></i>
+                            </button>
+                        </div>
+
+                        <div class="dock-right">
+                            <button class="dock-btn danger" title="Leave Meeting" onclick="gotoDonw()">
+                                <i class="bi bi-telephone-x-fill"></i> Leave
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ==========================================================================
+             SECTION 2: TRUSTED BY & LIVE STATISTICS
+             ========================================================================== -->
+        <section class="second-section" id="two">
+
+            <div class="used">
+                <h1>Used by professionals and innovative teams at</h1>
+
+                <div class="logs">
+                    <div>
+                        <img src="img/logo1.png" alt="Partner brand logo">
+                        <img src="img/logo2.png" alt="Partner brand logo" id="special">
+                    </div>
+                    <div>
+                        <img src="img/logo3.png" alt="Partner brand logo">
+                        <img src="img/logo4.png" alt="Partner brand logo">
+                    </div>
+                    <div>
+                        <img src="img/logo5.png" alt="Partner brand logo">
+                        <img src="img/logo6.png" alt="Partner brand logo">
+                    </div>
+                </div>
+            </div>
+
             <div class="stastics" id="statsSection">
-
                 <div>
-
                     <div class="stat">
                         <h1 data-target="200">0<span>k+</span></h1>
-                        <p>Users happiness by more</p>
+                        <p>Active Meeting Hosts</p>
                     </div>
 
                     <div class="stat">
-                        <h1 data-target="98">0<span>%</span></h1>
-                        <p>Payments preview</p>
+                        <h1 data-target="99">0<span>%</span></h1>
+                        <p>Satisfaction & Reliability</p>
                     </div>
-
                 </div>
 
                 <div>
-
                     <div class="stat">
                         <h1 data-target="150">0<span>+</span></h1>
-                        <p>Capital required</p>
+                        <p>Countries Connected</p>
                     </div>
 
                     <div class="stat">
                         <h1 data-target="10">0<span>pb</span></h1>
-                        <p id="align">Data pixels</p>
+                        <p id="align">Encrypted Meeting Data</p>
                     </div>
-
                 </div>
-
             </div>
-    
+
         </section>
 
+        <!-- ==========================================================================
+             SECTION 3: FLEXIBLE SOLUTIONS (INTERACTIVE TABS)
+             ========================================================================== -->
         <section class="third-section" id="third">
 
             <div class="container">
                 <div class="links">
+                    <h1>Flexible solutions <br>for all your needs</h1>
 
-                    <h1>Flexible solutions  <br> for all your needs </h1>
-
-                    <div class="link active" onclick="showContent('content1')">&nbsp;&nbsp;&nbsp;AI Companion</div>
-                    <div class="link" onclick="showContent('content2')">&nbsp;&nbsp;&nbsp;Live Chat</div>
-                    <div class="link" onclick="showContent('content3')">&nbsp;&nbsp;&nbsp;Virtual Meetings</div>
-                    <div class="link" onclick="showContent('content4')">&nbsp;&nbsp;&nbsp;AI Summarize</div>
-                    <div class="link" onclick="showContent('content5')">&nbsp;&nbsp;&nbsp;Meetinh Clip</div>
+                    <div class="link active" onclick="showContent('content1')">
+                        <i class="bi bi-stars"></i> AI Companion
+                    </div>
+                    <div class="link" onclick="showContent('content2')">
+                        <i class="bi bi-chat-dots-fill"></i> Live Chat
+                    </div>
+                    <div class="link" onclick="showContent('content3')">
+                        <i class="bi bi-camera-video-fill"></i> Virtual Meetings
+                    </div>
+                    <div class="link" onclick="showContent('content4')">
+                        <i class="bi bi-file-earmark-text-fill"></i> AI Summarize
+                    </div>
+                    <div class="link" onclick="showContent('content5')">
+                        <i class="bi bi-film"></i> Meeting Clip
+                    </div>
                 </div>
 
-               <div class="show-links">
+                <div class="show-links">
 
+                    <!-- Tab 1: AI Companion -->
                     <div class="content active" id="content1">
-
-                        <div class="back-content">
-                            
-                            <div class="top">
-                                <p>Jay Chan </p>
-                                <img src="img/icone.ico" alt="">
+                        <div class="tab-showcase">
+                            <div class="tab-header">
+                                <div class="tab-header-info">
+                                    <h2><i class="bi bi-stars"></i> AI Companion & Live Intelligence</h2>
+                                    <p>Never miss a key insight. Let Roomify AI generate automatic transcriptions and track commitments in real-time.</p>
+                                </div>
+                                <span class="badge badge-primary"><i class="bi bi-check-circle"></i> Active</span>
                             </div>
 
+                            <div class="tab-card-grid">
+                                <div class="interactive-mock">
+                                    <div class="mock-top">
+                                        <span><i class="bi bi-chat-left-quote"></i> Live Meeting Transcript</span>
+                                        <span class="badge badge-primary">English (US)</span>
+                                    </div>
+                                    <div class="chat-stream">
+                                        <div class="chat-bubble">
+                                            <img src="img/cara2.jfif" alt="Marcus">
+                                            <div class="chat-bubble-body">
+                                                <div class="chat-bubble-author">
+                                                    Marcus Vance <span class="chat-bubble-time">12:23 PM</span>
+                                                </div>
+                                                The new video compression engine reduced latency by 45%. We are ready for production.
+                                                <div>
+                                                    <span class="reaction-pill"><i class="bi bi-check2"></i> Approved</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="chat-bubble">
+                                            <img src="img/cara7.jfif" alt="Harry">
+                                            <div class="chat-bubble-body">
+                                                <div class="chat-bubble-author">
+                                                    Harry Kane <span class="chat-bubble-time">12:24 PM</span>
+                                                </div>
+                                                Awesome! Let us sync with the mobile team tomorrow at 10 AM to finalize the rollout.
+                                                <div>
+                                                    <span class="reaction-pill"><i class="bi bi-calendar-event"></i> Scheduled</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="interactive-mock">
+                                    <div class="mock-top">
+                                        <span><i class="bi bi-list-check"></i> Auto-Extracted Action Items</span>
+                                        <span class="badge badge-primary">3 Tasks</span>
+                                    </div>
+                                    <div class="action-list">
+                                        <div class="action-item">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <div>
+                                                <strong>Deploy v2.4 build to staging</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Assigned to Marcus • Due today</p>
+                                            </div>
+                                        </div>
+                                        <div class="action-item">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <div>
+                                                <strong>Review customer feedback dashboard</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Assigned to Elena • Due Friday</p>
+                                            </div>
+                                        </div>
+                                        <div class="action-item">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <div>
+                                                <strong>Update security audit documentation</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Assigned to Security Team</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <img src="img/cara4.jfif" class="img1" alt="">
-                        <img src="img/call.jpg" class="img2" alt="">
-                        <img src="img/call-center.jpg" class="img3" alt="">
-
-                        <div class="sms_one">
-
-                            <div class="user">
-                                <img src="img/cara2.jfif" alt="">
-                                <p>Harry * <span>12:23 PM</span></p>
-                            </div>
-
-                            <div class="text-sms">
-                                Estou surpreso com a encomenda<br> Enfim foi boa!
-                            </div>
-
-                            <div class="emoji"> <img src="img/emoji.png" alt=""> </div>
-                        </div>
-
-                        <div class="sms_two">
-
-                            <div class="user">
-                                <img src="img/cara7.jfif" alt="">
-                                <p class="name">HarryKane</p>
-
-                                <span class="smile">Smile</span>
-                                <span class="ago">hours ago</span>
-                            </div>
-
-                            <div class="text-sms">
-                                Amanhã as 12 no BFA <br> conto com vc.
-                            </div>
-                        </div>
-
                     </div>
 
+                    <!-- Tab 2: Live Chat -->
                     <div class="content" id="content2">
-                        <h2>Em construção</h2>
+                        <div class="tab-showcase">
+                            <div class="tab-header">
+                                <div class="tab-header-info">
+                                    <h2><i class="bi bi-chat-dots-fill"></i> High-Speed Team Chat</h2>
+                                    <p>Collaborate in real time with organized threads, direct file sharing, and instant code snippet formatting.</p>
+                                </div>
+                                <span class="badge badge-primary"><i class="bi bi-shield-lock"></i> End-to-End Encrypted</span>
+                            </div>
+
+                            <div class="tab-card-grid">
+                                <div class="interactive-mock">
+                                    <div class="mock-top">
+                                        <span><i class="bi bi-hash"></i> sprint-review-chat</span>
+                                        <span class="badge badge-primary">14 Online</span>
+                                    </div>
+                                    <div class="chat-stream">
+                                        <div class="chat-bubble">
+                                            <img src="img/cara3.jfif" alt="Elena">
+                                            <div class="chat-bubble-body">
+                                                <div class="chat-bubble-author">
+                                                    Elena Rostova <span class="chat-bubble-time">12:28 PM</span>
+                                                </div>
+                                                Here is the updated design token guide for dark mode:
+                                                <div style="margin-top: 8px; padding: 8px 12px; background: #f1f5f9; border-radius: 8px; display: flex; align-items: center; gap: 8px;">
+                                                    <i class="bi bi-file-earmark-pdf-fill" style="color: #ef4444; font-size: 1.2rem;"></i>
+                                                    <div>
+                                                        <strong style="font-size: 0.8rem; display: block;">Design_Tokens_v2.pdf</strong>
+                                                        <span style="font-size: 0.7rem; color: #64748b;">2.4 MB • Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-bubble">
+                                            <img src="img/cara4.jfif" alt="Kiossa">
+                                            <div class="chat-bubble-body">
+                                                <div class="chat-bubble-author">
+                                                    Kiossa Silva <span class="chat-bubble-time">12:30 PM</span>
+                                                </div>
+                                                Downloaded and reviewed. The spacing and contrast are spot on.
+                                                <div>
+                                                    <span class="reaction-pill"><i class="bi bi-hand-thumbs-up"></i> +4 votes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="interactive-mock">
+                                    <div class="mock-top">
+                                        <span><i class="bi bi-folder-check"></i> Shared Assets</span>
+                                        <span class="badge badge-primary">5 Files</span>
+                                    </div>
+                                    <div class="action-list">
+                                        <div class="action-item">
+                                            <i class="bi bi-file-earmark-image"></i>
+                                            <div>
+                                                <strong>Mobile_Wireframes_v3.fig</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Shared by Sarah • 14 MB</p>
+                                            </div>
+                                        </div>
+                                        <div class="action-item">
+                                            <i class="bi bi-filetype-csv"></i>
+                                            <div>
+                                                <strong>Benchmark_Results_Q3.csv</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Shared by Analytics Bot</p>
+                                            </div>
+                                        </div>
+                                        <div class="action-item">
+                                            <i class="bi bi-link-45deg"></i>
+                                            <div>
+                                                <strong>staging.roomify.app/preview</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Live staging URL</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- Tab 3: Virtual Meetings -->
                     <div class="content" id="content3">
-                        <h2>Em construção</h2>
+                        <div class="tab-showcase">
+                            <div class="tab-header">
+                                <div class="tab-header-info">
+                                    <h2><i class="bi bi-camera-video-fill"></i> Studio-Grade Virtual Meetings</h2>
+                                    <p>Connect with up to 500 participants with spatial audio, AI noise suppression, and adaptive 4K video streams.</p>
+                                </div>
+                                <span class="badge badge-primary"><i class="bi bi-wifi"></i> Low Latency &lt; 50ms</span>
+                            </div>
+
+                            <div class="tab-card-grid">
+                                <div class="interactive-mock dark-theme">
+                                    <div class="mock-top">
+                                        <span><i class="bi bi-grid-fill"></i> 4-Way Gallery View</span>
+                                        <span class="badge badge-dark">1080p Ultra</span>
+                                    </div>
+                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                                        <div style="position: relative; border-radius: 8px; overflow: hidden; aspect-ratio: 4/3;">
+                                            <img src="img/cara2.jfif" style="width: 100%; height: 100%; object-fit: cover;" alt="Speaker 1">
+                                            <span style="position: absolute; bottom: 4px; left: 6px; font-size: 0.7rem; background: rgba(0,0,0,0.6); padding: 2px 6px; border-radius: 4px;">Marcus (Eng)</span>
+                                        </div>
+                                        <div style="position: relative; border-radius: 8px; overflow: hidden; aspect-ratio: 4/3;">
+                                            <img src="img/cara3.jfif" style="width: 100%; height: 100%; object-fit: cover;" alt="Speaker 2">
+                                            <span style="position: absolute; bottom: 4px; left: 6px; font-size: 0.7rem; background: rgba(0,0,0,0.6); padding: 2px 6px; border-radius: 4px;">Elena (Design)</span>
+                                        </div>
+                                        <div style="position: relative; border-radius: 8px; overflow: hidden; aspect-ratio: 4/3;">
+                                            <img src="img/cara4.jfif" style="width: 100%; height: 100%; object-fit: cover;" alt="Speaker 3">
+                                            <span style="position: absolute; bottom: 4px; left: 6px; font-size: 0.7rem; background: rgba(0,0,0,0.6); padding: 2px 6px; border-radius: 4px;">Kiossa (PM)</span>
+                                        </div>
+                                        <div style="position: relative; border-radius: 8px; overflow: hidden; aspect-ratio: 4/3;">
+                                            <img src="img/cara5.jfif" style="width: 100%; height: 100%; object-fit: cover;" alt="Speaker 4">
+                                            <span style="position: absolute; bottom: 4px; left: 6px; font-size: 0.7rem; background: rgba(0,0,0,0.6); padding: 2px 6px; border-radius: 4px;">Mirian (Growth)</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="interactive-mock">
+                                    <div class="mock-top">
+                                        <span><i class="bi bi-sliders"></i> Audio & Video Tuning</span>
+                                        <span class="badge badge-primary">Optimized</span>
+                                    </div>
+                                    <div class="action-list">
+                                        <div class="action-item">
+                                            <i class="bi bi-soundwave" style="color: #2563eb;"></i>
+                                            <div>
+                                                <strong>AI Noise Suppression: High</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Removes keyboard clicks, dogs, and background fans</p>
+                                            </div>
+                                        </div>
+                                        <div class="action-item">
+                                            <i class="bi bi-brightness-high" style="color: #2563eb;"></i>
+                                            <div>
+                                                <strong>Low-Light Compensation: On</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Auto balances exposure in dim home offices</p>
+                                            </div>
+                                        </div>
+                                        <div class="action-item">
+                                            <i class="bi bi-shield-check" style="color: #10b981;"></i>
+                                            <div>
+                                                <strong>End-to-End Encryption (E2EE)</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">AES-256 GCM authenticated session keys</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- Tab 4: AI Summarize -->
                     <div class="content" id="content4">
-                        <h2>Em construção</h2>
+                        <div class="tab-showcase">
+                            <div class="tab-header">
+                                <div class="tab-header-info">
+                                    <h2><i class="bi bi-file-earmark-text-fill"></i> Instant Automated Meeting Minutes</h2>
+                                    <p>Transform 60-minute calls into structured, executive-ready summaries in under 15 seconds.</p>
+                                </div>
+                                <span class="badge badge-primary"><i class="bi bi-lightning-charge"></i> Instant Export</span>
+                            </div>
+
+                            <div class="tab-card-grid">
+                                <div class="interactive-mock">
+                                    <div class="mock-top">
+                                        <span><i class="bi bi-file-text"></i> Executive Summary</span>
+                                        <span class="badge badge-primary">Generated in 4s</span>
+                                    </div>
+                                    <div style="font-size: 0.88rem; color: #334155; line-height: 1.6;">
+                                        <p style="margin-bottom: 10px;"><strong>Key Objective:</strong> Align engineering and marketing teams on the Q3 Roomify release timeline.</p>
+                                        <p style="margin-bottom: 10px;"><strong>Agreed Outcomes:</strong> Beta release is locked for Nov 25th. Marketing campaign starts Dec 1st with early adopter discount.</p>
+                                        <p><strong>Next Steps:</strong> Complete QA signoff on Friday, Nov 22nd.</p>
+                                    </div>
+                                </div>
+
+                                <div class="interactive-mock">
+                                    <div class="mock-top">
+                                        <span><i class="bi bi-share"></i> One-Click Sync & Integration</span>
+                                        <span class="badge badge-primary">Connected</span>
+                                    </div>
+                                    <div class="action-list">
+                                        <div class="action-item">
+                                            <i class="bi bi-slack" style="color: #4a154b;"></i>
+                                            <div>
+                                                <strong>Sync summary to #announcements</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Auto-posted when call concludes</p>
+                                            </div>
+                                        </div>
+                                        <div class="action-item">
+                                            <i class="bi bi-envelope-at" style="color: #2563eb;"></i>
+                                            <div>
+                                                <strong>Email attendees recap PDF</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Sent to all 12 invited teammates</p>
+                                            </div>
+                                        </div>
+                                        <div class="action-item">
+                                            <i class="bi bi-calendar3" style="color: #10b981;"></i>
+                                            <div>
+                                                <strong>Create calendar follow-up</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Synced with Google & Outlook Calendar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- Tab 5: Meeting Clips -->
                     <div class="content" id="content5">
-                        <h2>Em construção</h2>
+                        <div class="tab-showcase">
+                            <div class="tab-header">
+                                <div class="tab-header-info">
+                                    <h2><i class="bi bi-film"></i> Shareable Meeting Clips</h2>
+                                    <p>Highlight the best moments, customer quotes, or design walkthroughs with timestamped, shareable links.</p>
+                                </div>
+                                <span class="badge badge-primary"><i class="bi bi-link-45deg"></i> Shareable Link</span>
+                            </div>
+
+                            <div class="tab-card-grid">
+                                <div class="interactive-mock dark-theme">
+                                    <div class="mock-top">
+                                        <span><i class="bi bi-play-circle"></i> Clip: "Customer Onboarding Demo"</span>
+                                        <span class="badge badge-dark">01:45</span>
+                                    </div>
+                                    <div style="position: relative; border-radius: 8px; overflow: hidden; background: #000; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
+                                        <img src="img/call.jpg" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.75;" alt="Clip thumbnail">
+                                        <div style="position: absolute; width: 48px; height: 48px; border-radius: 50%; background: rgba(37,99,235,0.9); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #fff;">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: #94a3b8; margin-top: 4px;">
+                                        <span>00:00</span>
+                                        <span>01:45</span>
+                                    </div>
+                                </div>
+
+                                <div class="interactive-mock">
+                                    <div class="mock-top">
+                                        <span><i class="bi bi-scissors"></i> Smart Highlights</span>
+                                        <span class="badge badge-primary">Auto-Clipped</span>
+                                    </div>
+                                    <div class="action-list">
+                                        <div class="action-item">
+                                            <i class="bi bi-bookmark-star-fill" style="color: #f59e0b;"></i>
+                                            <div>
+                                                <strong>Product Demo Walkthrough (04:12)</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Key architectural diagram presentation</p>
+                                            </div>
+                                        </div>
+                                        <div class="action-item">
+                                            <i class="bi bi-bookmark-star-fill" style="color: #f59e0b;"></i>
+                                            <div>
+                                                <strong>Q&amp;A on Enterprise Security (18:40)</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">SOC2 Type II compliance explanation</p>
+                                            </div>
+                                        </div>
+                                        <div class="action-item">
+                                            <i class="bi bi-link-45deg" style="color: #2563eb;"></i>
+                                            <div>
+                                                <strong>roomify.app/clip/9b27a0</strong>
+                                                <p style="font-size: 0.78rem; color: #64748b;">Copy public link with password protection</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-               </div>
-
+                </div>
             </div>
 
         </section>
 
+        <!-- ==========================================================================
+             SECTION 4: REAL-TIME CONVERSATION INTELLIGENCE
+             ========================================================================== -->
         <section class="fourth-section" id="fourth">
-            <h1>Now you can have conversation <br>without missing anything</h1>
+            <h1>Now you can have conversations <br>without missing anything</h1>
 
             <div class="photos">
-
                 <div>
-                    <img src="img/cara2.jfif" alt="">
-                    <img src="img/cara3.jfif" alt="">
+                    <img src="img/cara2.jfif" alt="Teammate Marcus">
+                    <img src="img/cara3.jfif" alt="Teammate Elena">
                 </div>
                 <div>
-                    <img src="img/cara7.jfif" alt="">
-                    <img src="img/cara5.jfif" alt="">
-                    <img src="img/cara6.jfif" alt="">
-                    <img src="img/cara7.jfif" alt="">
-                    <img src="img/cara3.jfif" alt="">
+                    <img src="img/cara7.jfif" alt="Teammate David">
+                    <img src="img/cara5.jfif" alt="Teammate Mirian">
+                    <img src="img/cara6.jfif" alt="Teammate Ariel">
+                    <img src="img/cara1.jfif" alt="Teammate Alex" onerror="this.src='img/cara4.jfif'">
+                    <img src="img/cara3.jfif" alt="Teammate Sophie">
                 </div>
                 <div>
-                    <img src="img/cara5.jfif" alt="">
-                    <img src="img/cara2.jfif" alt="">
+                    <img src="img/cara5.jfif" alt="Teammate Laura">
+                    <img src="img/cara2.jfif" alt="Teammate Lucas">
                 </div>
-
             </div>
 
             <div class="most">
-                <div></div>
-                <div></div>
-                <div></div>
-
-                <div>
-
-                    <div class="cabec">
-                        <p>Recharges <span> &nbsp;&nbsp;<i class="bi bi-reception-4"></i></span>
-                        </p>
-
-                        <span><i class="bi bi-three-dots"></i></span>
-                    </div>
-
-                    <div class="speak">
-
-                        <div class="op">
-                            <img src="img/cara2.jfif" alt="">
-
-                            <div class="sec">
-                                <p>Ster00</p>
-
-                                <span>Good</span>
-                            </div>
-
-                        </div>
-
-                        <div class="op">
-                            <img src="img/cara3.jfif" alt="">
-
-                            <div class="sec">
-                                <p>User34</p>
-
-                                <span>I´m fine</span>
-                            </div>
-                            
-                        </div>
-
-                        <div class="op">
-                            <img src="img/cara7.jfif" alt="">
-
-                            <div class="sec">
-                                <p>Brother</p>
-
-                                <span>The money?</span>
-                            </div>
-                            
-                        </div>
-
-                        <div class="op">
-                            <img src="img/cara5.jfif" alt="">
-
-                            <div class="sec">
-                                <p>Queen</p>
-
-                                <span>I love you</span>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-
+                <div class="cabec">
+                    <p><i class="bi bi-broadcast"></i> Live Audio Feed & Transcription</p>
+                    <span><i class="bi bi-three-dots"></i></span>
                 </div>
 
-            </div>
+                <div class="speak">
+                    <div class="op">
+                        <img src="img/cara2.jfif" alt="Marcus">
+                        <div class="sec">
+                            <p>Marcus Vance</p>
+                            <span>"Latency is under 40ms"</span>
+                        </div>
+                    </div>
 
+                    <div class="op">
+                        <img src="img/cara3.jfif" alt="Elena">
+                        <div class="sec">
+                            <p>Elena Rostova</p>
+                            <span>"Figma designs approved"</span>
+                        </div>
+                    </div>
+
+                    <div class="op">
+                        <img src="img/cara7.jfif" alt="David">
+                        <div class="sec">
+                            <p>David Chen</p>
+                            <span>"Backend deploy succeeded"</span>
+                        </div>
+                    </div>
+
+                    <div class="op">
+                        <img src="img/cara5.jfif" alt="Mirian">
+                        <div class="sec">
+                            <p>Mirian Santos</p>
+                            <span>"Ready for global rollout"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- ==========================================================================
+             SECTION 5: TEAM COLLABORATION & SWITCHER
+             ========================================================================== -->
         <section class="fifth-section" id="fifth">
 
             <div class="horizontal-container">
                 <div class="nav-links">
                     <div class="nav-link active" onclick="showNavContent('nav-content1')">People Pricing</div>
                     <div class="nav-link" onclick="showNavContent('nav-content2')">Meeting Chat</div>
-                    <div class="nav-link" onclick="showNavContent('nav-content3')">Model</div>
+                    <div class="nav-link" onclick="showNavContent('nav-content3')">AI Models</div>
                     <div class="nav-link" onclick="showNavContent('nav-content4')">Share Meeting</div>
-                    <div class="nav-link" onclick="showNavContent('nav-content5')">Meeting certifire</div>
+                    <div class="nav-link" onclick="showNavContent('nav-content5')">Meeting Certification</div>
                     <div class="nav-link" onclick="showNavContent('nav-content6')">Chat Browser</div>
                 </div>
 
                 <div class="content-wrapper">
 
+                    <!-- Nav Tab 1: People Pricing -->
                     <div class="nav-content active" id="nav-content1">
-
                         <div class="geral-pricing">
                             <div class="pricing">
-                                <i class="bi bi-lightbulb-fill"></i>
-                                <p> <span>Precificação para Pessoas</span>: Nosso produto foi desenvolvido com você em mente! Com uma estratégia de preços justa e acessível, garantimos que todos possam usufruir dos benefícios que ele oferece. Afinal, sua satisfação é nossa prioridade.</p>
+                                <i class="bi bi-shield-check"></i>
+                                <p><span>Precificação Transparente</span> Nosso produto foi desenvolvido com você em mente. Com uma estratégia de preços clara e acessível, garantimos que equipes de qualquer tamanho aproveitem todos os recursos sem surpresas na fatura.</p>
                             </div>
                             <div class="pricing">
-                                <i class="bi bi-crosshair"></i>
-                                <p> <span>Focado no Valor Humano</span>: Entendemos que cada cliente é único, por isso adaptamos nossos preços para atender às suas necessidades. Queremos que você tenha a melhor experiência, com o máximo de valor pelo seu investimento.</p>
+                                <i class="bi bi-person-heart"></i>
+                                <p><span>Focado no Valor Humano</span> Cada organização possui necessidades próprias. Oferecemos planos flexíveis que escalam de acordo com o crescimento da sua equipe, maximizando seu retorno de investimento.</p>
                             </div>
                             <div class="pricing">
-                                <i class="bi bi-fire"></i>
-                                <p> <span>Aproveite Agora</span>: Não perca a oportunidade de adquirir um produto que combina qualidade e preço acessível. Com nossa "Precificação para Pessoas", você terá exatamente o que precisa, sem pesar no bolso.</p>
+                                <i class="bi bi-lightning-charge"></i>
+                                <p><span>Aproveite Agora</span> Comece gratuitamente hoje mesmo com todas as funcionalidades essenciais. Sem necessidade de cartão de crédito para os primeiros 30 dias de teste.</p>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Nav Tab 2: Meeting Chat -->
                     <div class="nav-content" id="nav-content2">
                         <div class="geral-pricing">
                             <div class="pricing">
-                                <i class="bi bi-people-fill"></i>
-                                <p> <span>Chat para Reuniões</span>: Simplifique sua comunicação! Com o Meeting Chat, você pode colaborar em tempo real com sua equipe, garantindo que todos estejam na mesma página, independentemente de onde estejam.</p>
+                                <i class="bi bi-chat-left-dots"></i>
+                                <p><span>Chat Colaborativo</span> Simplifique a comunicação interna com salas de mensagens instantâneas, canais dedicados e sincronização fluida entre web, desktop e celular.</p>
                             </div>
                             <div class="pricing">
                                 <i class="bi bi-graph-up-arrow"></i>
-                                <p> <span>Foco na Produtividade</span>: O Meeting Chat foi criado para tornar suas reuniões mais eficientes. Esqueça as longas trocas de e-mails! Aqui, todas as informações estão organizadas e acessíveis para uma tomada de decisão rápida e eficaz.</p>
+                                <p><span>Produtividade Contínua</span> Evite reuniões desnecessárias resolvendo pendências rápidas por chat com suporte a reações, formatação de código e anexos em alta definição.</p>
                             </div>
                             <div class="pricing">
-                                <i class="bi bi-wifi"></i>
-                                <p> <span> Conecte-se Agora</span>: Aumente a produtividade das suas reuniões com o Meeting Chat. Fácil de usar, intuitivo e feito para transformar a forma como sua equipe trabalha!</p>
+                                <i class="bi bi-broadcast-pin"></i>
+                                <p><span>Conexão Imediata</span> Transfira discussões do chat para chamadas de vídeo com apenas um clique. Tudo em um único ecossistema integrado.</p>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Nav Tab 3: Model -->
                     <div class="nav-content" id="nav-content3">
-                       <div class="geral-pricing">
-                        <!-- Seção Model -->
+                        <div class="geral-pricing">
                             <div class="pricing">
-                                <i class="bi bi-cpu-fill"></i>
-                                <p> <span>Model</span>: Utilize o poder do processamento inteligente com o Model. Ele otimiza processos complexos, garantindo decisões rápidas e precisas em suas operações.</p>
+                                <i class="bi bi-cpu"></i>
+                                <p><span>Processamento Inteligente</span> Modelos neurais de última geração analisam o áudio e vídeo localmente, garantindo máxima privacidade e velocidade ultra rápida.</p>
                             </div>
                             <div class="pricing">
                                 <i class="bi bi-speedometer2"></i>
-                                <p> <span>Alta Performance</span>: O Model entrega resultados com alta velocidade e precisão, tornando-o uma solução ideal para empresas que precisam de análises e decisões em tempo real.</p>
+                                <p><span>Alta Performance</span> Consumo mínimo de CPU e bateria em notebooks e dispositivos móveis graças aos aceleradores de hardware integrados.</p>
                             </div>
                             <div class="pricing">
-                                <i class="bi bi-gear-fill"></i>
-                                <p> <span>Automatização Inteligente</span>: Com o Model, suas operações se tornam mais eficientes por meio de automação avançada e algoritmos que aprendem e se adaptam às suas necessidades.</p>
+                                <i class="bi bi-gear-wide-connected"></i>
+                                <p><span>Automatização Inteligente</span> Gere minutas de reunião, resumos executivos e cartões de tarefas automaticamente ao final de cada conferência.</p>
                             </div>
-
-                       </div>
+                        </div>
                     </div>
 
+                    <!-- Nav Tab 4: Share Meeting -->
                     <div class="nav-content" id="nav-content4">
-
                         <div class="cent">
-
                             <div>
-
                                 <div class="chats">
-                                    <h3>Swicth your meeting</h3>
+                                    <h3><i class="bi bi-telephone-outbound"></i> Switch your meeting</h3>
 
                                     <div class="search">
-                                        <input type="search" placeholder="Digit a number">
-
-                                        <button>Search</button>
+                                        <input type="search" placeholder="Enter meeting code or PIN...">
+                                        <button>Join</button>
                                     </div>
 
-                                    <p class="you">Your recent calls today</p>
+                                    <p class="you">Quick Call Teammates</p>
 
                                     <div class="contacts">
-                                        
-                                        <div>
+                                        <div title="Invite teammate">
                                             <p>+</p>
-
                                             <span>Add</span>
                                         </div>
-
                                         <div>
-                                            <img src="img/cara2.jfif" alt="">
-
-                                            <strong>Kiossa</strong>
+                                            <img src="img/cara2.jfif" alt="Marcus">
+                                            <strong>Marcus</strong>
                                         </div>
-
                                         <div>
-                                            <img src="img/cara3.jfif" alt="">
-
-                                            <strong>Kenny</strong>
+                                            <img src="img/cara3.jfif" alt="Elena">
+                                            <strong>Elena</strong>
                                         </div>
-
                                         <div>
-                                            <img src="img/cara7.jfif" alt="">
-
-                                            <strong>Leilo</strong>
+                                            <img src="img/cara7.jfif" alt="David">
+                                            <strong>David</strong>
                                         </div>
-
                                         <div>
-                                            <img src="img/cara5.jfif" alt="">
-
+                                            <img src="img/cara5.jfif" alt="Mirian">
                                             <strong>Mirian</strong>
                                         </div>
-
                                         <div>
-                                            <img src="img/cara6.jfif" alt="">
-
+                                            <img src="img/cara6.jfif" alt="Ariel">
                                             <strong>Ariel</strong>
-                                        </div>
-
-                                        <div>
-                                            <img src="img/cara7.jfif" alt="">
-
-                                            <strong>Jorge</strong>
                                         </div>
                                     </div>
 
                                     <div class="last">
-                                        <p>meeting number?</p>
-
-                                        <span><i class="bi bi-link-45deg"></i></span>
+                                        <p>Have meeting link?</p>
+                                        <span title="Copy room link"><i class="bi bi-link-45deg"></i></span>
                                     </div>
                                 </div>
                             </div>
 
                             <div>
-                                <h1>Make your team <br> collaboration easy</h1>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio ipsum aspernatur, non omnis saepe velit asperiores facilis aperiam quis?</p>
+                                <h1>Make your team <br>collaboration easy</h1>
+                                <p>Invite colleagues with a single click, share interactive whiteboards, and keep everyone synchronized across time zones.</p>
 
                                 <div class="baixo">
-
                                     <div>
-                                        <span><i class="bi bi-person-add"></i></span>
-
+                                        <span><i class="bi bi-person-plus-fill"></i></span>
                                         <h3>Invite your Team</h3>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione velit suscipit totam incidunt.</p>
+                                        <p>Send instant invites via email, Slack, or direct URL with custom room permissions and waiting lobby.</p>
                                     </div>
-
                                     <div>
-                                        <span><i class="bi bi-share"></i></span>
-
-                                        <h3>Invite your Team</h3>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione velit suscipit totam incidunt.</p>
+                                        <span><i class="bi bi-share-fill"></i></span>
+                                        <h3>Seamless Sharing</h3>
+                                        <p>Share windows, single tabs, or system audio with 60fps smoothness and low bandwidth mode.</p>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
+                    <!-- Nav Tab 5: Meeting Certifire -->
                     <div class="nav-content" id="nav-content5">
                         <div class="geral-pricing">
                             <div class="pricing">
-                                <i class="bi bi-award-fill"></i>
-                                <p> <span>Certificação de Reuniões</span>: Garanta que suas reuniões sejam eficientes e produtivas com o Meeting Certifire. Nossa solução ajuda a avaliar e melhorar a qualidade de suas reuniões, proporcionando um ambiente colaborativo de alto desempenho.</p>
+                                <i class="bi bi-award"></i>
+                                <p><span>Certificação Corporativa</span> Conformidade com padrões globais de segurança, incluindo SOC2 Tipo II, HIPAA e regulamentos GDPR/LGPD.</p>
                             </div>
                             <div class="pricing">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <p> <span>Avaliação e Melhoria Contínua</span>: O Meeting Certifire analisa a eficácia das reuniões, oferecendo feedback e sugestões para otimização. Dessa forma, você pode garantir que cada encontro seja focado, com resultados claros e alinhados aos objetivos da equipe.</p>
+                                <i class="bi bi-bar-chart-line"></i>
+                                <p><span>Relatórios de Engajamento</span> Métricas anônimas sobre pontualidade, engajamento e qualidade técnica de sinal para otimizar reuniões da empresa.</p>
                             </div>
                             <div class="pricing">
-                                <i class="bi bi-check-circle-fill"></i>
-                                <p> <span>Certifique-se do Sucesso</span>: Com o Meeting Certifire, suas reuniões estarão sempre no caminho certo para alcançar resultados. Aplique uma abordagem estruturada e comece a transformar suas reuniões em verdadeiras ferramentas de sucesso!</p>
+                                <i class="bi bi-check2-all"></i>
+                                <p><span>Garantia de Qualidade</span> SLA contratual de 99.9% de uptime com suporte técnico dedicado 24/7 para clientes corporativos.</p>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Nav Tab 6: Chat Browser -->
                     <div class="nav-content" id="nav-content6">
                         <div class="geral-pricing">
                             <div class="pricing">
-                                <i class="bi bi-browser-chrome"></i>
-                                <p> <span>Chat Browser</span>: Com o Chat Browser, você pode integrar seu navegador diretamente às suas conversas. Pesquise, compartilhe e discuta links sem sair do chat, tornando a navegação em equipe muito mais ágil e colaborativa.</p>
+                                <i class="bi bi-globe2"></i>
+                                <p><span>Chat no Navegador</span> Acesse suas chamadas e mensagens diretamente do Chrome, Safari, Edge ou Firefox sem instalar extensões.</p>
                             </div>
                             <div class="pricing">
-                                <i class="bi bi-collection"></i>
-                                <p> <span>Fácil Integração</span>: O Chat Browser permite que você navegue na web sem sair da plataforma de chat. É a solução perfeita para otimizar reuniões e garantir que todos os recursos necessários estejam a um clique de distância.</p>
+                                <i class="bi bi-window-stack"></i>
+                                <p><span>Modo PiP Nativo</span> Acompanhe a reunião em janela flutuante Picture-in-Picture enquanto navega por outros sites e documentos.</p>
                             </div>
                             <div class="pricing">
-                                <i class="bi bi-lightning-fill"></i>
-                                <p> <span>Rapidez e Eficiência</span>: Aumente a eficiência nas suas reuniões e colaborações, pesquisando e compartilhando conteúdos em tempo real com o Chat Browser. Uma ferramenta poderosa para equipes que precisam de agilidade.</p>
+                                <i class="bi bi-lightning-charge"></i>
+                                <p><span>Carregamento Instantâneo</span> O Web Client do Roomify pesa menos de 3MB e abre em menos de 1 segundo mesmo em conexões lentas.</p>
                             </div>
                         </div>
                     </div>
 
                 </div>
-
             </div>
 
         </section>
-    
-        <section class="six-section" id="six">
-    
-            <h1>Simple pricing <br> and clear value</h1>
-    
-            <div class="geral-packge">
 
+        <!-- ==========================================================================
+             SECTION 6: PRICING PLANS
+             ========================================================================== -->
+        <section class="six-section" id="six">
+            <h1>Simple pricing <br>and clear value</h1>
+
+            <div class="geral-packge">
                 <div class="resp-aling">
 
+                    <!-- Plan 1: Basic Pro -->
                     <section>
                         <div class="gira">
-                            
                             <div class="basic-pro">
                                 <div class="desc">
                                     <h3>Basic Pro</h3>
-                                    <p> Only <span> $100 </span> permanent</p>
+                                    <p>Only <span class="price-val">$100</span> <span class="plan-period">permanent</span></p>
                                 </div>
-                            
+
                                 <ul>
                                     <li>
-                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum</strong> dolor sit amet consectetur
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>HD Video &amp; Audio</strong> up to 50 attendees</div>
                                     </li>
                                     <li>
-                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor sit</strong> amet consectetur
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Unlimited Meetings</strong> with 40-min cap</div>
                                     </li>
                                     <li>
-                                       <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor</strong> darkfly
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Screen Sharing</strong> with high quality tab audio</div>
                                     </li>
                                     <li>
-                                        <span><i class="bi bi-check-circle-fill"></i></span><strong> Lorem ipsum dolor sit amet</strong> emet <br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; rie buu consectetur
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>End-to-End Encryption</strong> included for all calls</div>
                                     </li>
                                     <li>
-                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum</strong> sit amet Lorem,<br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; ipsum dolor
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Chat &amp; File Exchange</strong> up to 100MB files</div>
                                     </li>
                                 </ul>
-                                <button>Buy now</button>
+                                <button onclick="gotoDonw()">Get Started</button>
                             </div>
-                             
                         </div>
                     </section>
-        
+
+                    <!-- Plan 2: Business Pro (Highlighted) -->
                     <section>
                         <div class="gira">
-    
                             <div class="bussines-pro">
-                                <button id="btn-static">More solded</button>
+                                <button id="btn-static"><i class="bi bi-fire"></i> Most Popular</button>
                                 <div class="desc">
-                                    <h3>Bussines Pro</h3>
-                                    <p> Only <span> $250 </span> permanent</p>
+                                    <h3>Business Pro</h3>
+                                    <p>Only <span class="price-val">$250</span> <span class="plan-period">permanent</span></p>
                                 </div>
-                            
+
                                 <ul>
                                     <li>
-                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum</strong> dolor sit amet consectetur
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Everything in Basic</strong> plus:</div>
                                     </li>
                                     <li>
-                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor sit</strong> amet consectetur
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Up to 250 participants</strong> with no time limit</div>
                                     </li>
                                     <li>
-                                       <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor</strong> darkfly
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Roomify AI Companion</strong> for live notes &amp; minutes</div>
                                     </li>
                                     <li>
-                                        <span><i class="bi bi-check-circle-fill"></i></span><strong> Lorem ipsum dolor sit amet</strong> emet <br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; rie buu consectetur
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Cloud Recording</strong> with 100GB secure storage</div>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Custom Branding</strong> and vanity room URLs</div>
                                     </li>
                                 </ul>
-                                <button id="btn-bottom">Buy now</button>
+                                <button id="btn-bottom" onclick="gotoDonw()">Upgrade to Business</button>
                             </div>
                         </div>
                     </section>
 
                 </div>
-    
-                <div>
 
+                <!-- Plan 3: Business Plus -->
+                <div>
                     <section>
                         <div class="gira">
                             <div class="bussines-plus">
                                 <div class="desc">
-                                    <h3>Bussines Plus</h3>
-                                    <p> Only <span> $500 </span> permanent</p>
+                                    <h3>Business Plus</h3>
+                                    <p>Only <span class="price-val">$500</span> <span class="plan-period">permanent</span></p>
                                 </div>
-                    
+
                                 <ul>
                                     <li>
-                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum</strong> dolor sit amet consectetur
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Everything in Pro</strong> plus:</div>
                                     </li>
                                     <li>
-                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor sit</strong> amet consectetur
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Up to 500 participants</strong> with breakout rooms</div>
                                     </li>
                                     <li>
-                                       <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum dolor</strong> darkfly
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Unlimited Cloud Storage</strong> for meeting archives</div>
                                     </li>
                                     <li>
-                                        <span><i class="bi bi-check-circle-fill"></i></span><strong> Lorem ipsum dolor sit amet</strong> emet <br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; rie buu consectetur
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>SSO / SAML 2.0</strong> enterprise authentication</div>
                                     </li>
                                     <li>
-                                        <span><i class="bi bi-check-circle-fill"></i></span> <strong>Lorem ipsum</strong> sit amet Lorem,<br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; ipsum dolor
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <div class="item-text"><strong>Dedicated Account Manager</strong> &amp; 24/7 SLA</div>
                                     </li>
                                 </ul>
-                                <button>Buy now</button>
+                                <button onclick="gotoDonw()">Contact Sales</button>
                             </div>
                         </div>
                     </section>
-                    
                 </div>
-    
+
             </div>
-    
         </section>
-    
+
+        <!-- ==========================================================================
+             SECTION 7: FAQS ACCORDION
+             ========================================================================== -->
         <section class="faqs" id="five">
-    
-            <h1>Things tou probably wonder</h1>
-    
+            <h1>Things you probably wonder</h1>
+
             <div class="faq-container">
-    
                 <div class="faq">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Lorem ipsum dolor sit amet?</span>
-                        <p class="icon"><i class="bi bi-chevron-up"></i></p>
+                        <span>How does Roomify ensure call security and privacy?</span>
+                        <p class="icon"><i class="bi bi-chevron-down"></i></p>
                     </div>
                     <div class="faq-answer">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corrupti dolores velit maiores quidem. Quibusdam.</p>
+                        <p>All video and audio streams are protected with 256-bit AES end-to-end encryption. Your session data and AI summaries are strictly private and never used to train external models.</p>
                     </div>
                 </div>
-    
+
                 <div class="faq">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Lorem ipsum dolor sit amet?</span>
-                        <p class="icon"><i class="bi bi-chevron-up"></i></p>
+                        <span>Do my guests need to install an app to join a call?</span>
+                        <p class="icon"><i class="bi bi-chevron-down"></i></p>
                     </div>
                     <div class="faq-answer">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eos delectus quas. Voluptas blanditiis odio rem reprehenderit possimus!</p>
+                        <p>No. Guests can join directly through any modern web browser on desktop or mobile with a single click on your meeting link, without creating an account or installing anything.</p>
                     </div>
                 </div>
-    
+
                 <div class="faq">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Lorem ipsum dolor sit amet?</span>
-                        <p class="icon"><i class="bi bi-chevron-up"></i></p>
+                        <span>How does the AI Companion transcribe meetings in real time?</span>
+                        <p class="icon"><i class="bi bi-chevron-down"></i></p>
                     </div>
                     <div class="faq-answer">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eos delectus quas. Voluptas blanditiis odio rem reprehenderit possimus!</p>
+                        <p>Roomify AI listens in the background, attributing speech to individual speakers and generating live captions and structured minutes that can be exported directly to Slack, Notion, or PDF.</p>
                     </div>
                 </div>
-    
+
                 <div class="faq">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Lorem ipsum dolor sit amet?</span>
-                        <p class="icon"><i class="bi bi-chevron-up"></i></p>
+                        <span>Can I record meetings and share highlights with my team?</span>
+                        <p class="icon"><i class="bi bi-chevron-down"></i></p>
                     </div>
                     <div class="faq-answer">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eos delectus quas. Voluptas blanditiis odio rem reprehenderit possimus!</p>
+                        <p>Yes. You can record locally or to Roomify Cloud in 1080p. Our Smart Clips tool allows you to trim key moments and share password-protected snippets with anyone.</p>
                     </div>
                 </div>
-    
+
                 <div class="faq">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Lorem ipsum dolor sit amet?</span>
-                        <p class="icon"><i class="bi bi-chevron-up"></i></p>
+                        <span>What operating systems and devices are supported?</span>
+                        <p class="icon"><i class="bi bi-chevron-down"></i></p>
                     </div>
                     <div class="faq-answer">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eos delectus quas. Voluptas blanditiis odio rem reprehenderit possimus!</p>
+                        <p>Roomify is fully cross-platform with native desktop apps for Windows, macOS (Apple Silicon &amp; Intel), Linux, and mobile apps for iOS and Android, plus our full-featured Web Client.</p>
                     </div>
                 </div>
-    
             </div>
-    
         </section>
-    
+
+        <!-- ==========================================================================
+             SECTION 8: ULTIMATE CALL TO ACTION
+             ========================================================================== -->
         <div class="ultimate">
-             
             <div>
-                <h1>You've get this far.</h1>
-                <h1>Ready to get started you important meeting?</h1>
+                <h1>You've made it this far</h1>
+                <h1>Ready to supercharge your next important meeting?</h1>
             </div>
-    
+
             <div>
-                <button onclick="scrollToSection('six')">Planeed Please</button>
-                <button onclick="gotoDonw()">Start My Meeting</button>
+                <button onclick="scrollToSection('six')"><i class="bi bi-tags"></i> View Plans</button>
+                <button onclick="gotoDonw()"><i class="bi bi-arrow-right"></i> Start My Meeting</button>
             </div>
         </div>
 
     </main>
 
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
     <footer>
-
         <div class="pe-top">
-
             <div class="logo-brand">
-                <img src="img/favicon.png" alt="">
-    
+                <img src="img/favicon.svg" alt="Roomify Logo">
                 <p>Roomify</p>
             </div>
 
             <ul>
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="index.html">Festival</a> </li>
-                <li> <a href="index.html">Download</a> </li>
-                <li> <a href="index.html">Plus & Pridge</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#two">Festival</a></li>
+                <li><a href="#third">Solutions</a></li>
+                <li><a href="donwload.html">Download</a></li>
+                <li><a href="#six">Plus &amp; Pridge</a></li>
+                <li><a href="#five">FAQs</a></li>
             </ul>
-
         </div>
 
         <div class="follow">
-           
             <div class="text">
-                <p>&copy; Roomify 2024</p>
-                <p>Design Dribbble - Developer by Herculano Quimuanga</p>
+                <p>&copy; 2026 Roomify Technologies Inc. All rights reserved.</p>
+                <p>Designed with clean aesthetics • Developed by Herculano Quimuanga</p>
             </div>
 
             <div class="sociais">
-                <p>Follow</p>
-
+                <p>Follow Us</p>
                 <ul>
-                    <li> <a href="#"> <img src="img/fb-logo.png" alt=""></a> </li>
-                    <li> <a href="#"> <img src="img/insta-logoo.png" alt=""></a> </li>
-                    <li> <a href="#"> <img id="img-len" src="img/x-logo.png" alt=""></a> </li>
+                    <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a></li>
+                    <li><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
-    </footer> 
+    </footer>
 
-    <div class="modal-login">
-
+    <!-- ==========================================================================
+         MODAL: LOGIN
+         ========================================================================== -->
+    <div class="modal-login" role="dialog" aria-modal="true">
         <div class="modal-body">
+            <button class="close-modal" aria-label="Close login dialog">&times;</button>
+            <h1>Welcome Back</h1>
 
-
-            <button class="close-modal">x</button>
-
-            <h1>Login Please</h1>
-
-            <form id="loginForm" action="#" method="post">
+            <form id="loginForm" action="#" method="post" onsubmit="event.preventDefault();">
+                <div class="control">
+                    <input type="email" class="log_input" placeholder="Your work email..." required oninput="validateEmail()">
+                    <span class="log_error">Please enter a valid email address</span>
+                </div>
 
                 <div class="control">
-                    <input type="email" class="log_input" placeholder="Your email..." required oninput="validateEmail()">
-                    <span class="log_error">Invalid email</span>
+                    <input type="password" class="log_input" placeholder="Your password..." required oninput="validatePass()">
+                    <span class="log_error">Password must have at least 8 characters</span>
                 </div>
-        
-                <div class="control">
-                    <input type="password" class="log_input" placeholder="Your password" required oninput="validatePass()">
-                    <span class="log_error">Invalid Password. Require 8 characters</span>
-                </div>
-        
-                <button type="submit" id="loginButton">Login</button>
-        
+
+                <button type="submit" id="loginButton"><i class="bi bi-box-arrow-in-right"></i> Log In</button>
+
                 <div class="other">
                     <p id="newAccount">Create a new account</p>
-                    <span>Or</span>
+                    <span>&bull;</span>
                     <p class="forgot">Forgot password?</p>
                 </div>
-        
+
                 <div class="terms">
                     <input type="checkbox" id="checkbox" required>
-                    <label for="checkbox">I accept and confirm with all Terms and Privacy Politic</label>
+                    <label for="checkbox">I accept and agree with the Terms of Service &amp; Privacy Policy</label>
                 </div>
-        
             </form>
-
         </div>
-
     </div>
 
-    <div class="modal-sign">
-
+    <!-- ==========================================================================
+         MODAL: SIGN UP
+         ========================================================================== -->
+    <div class="modal-sign" role="dialog" aria-modal="true">
         <div class="body-sign">
+            <button class="close-modal-sign" aria-label="Close registration dialog">&times;</button>
+            <h1>Create your account</h1>
 
-            <button class="close-modal-sign">x</button>
-
-            <h1>Create a new account</h1>
-
-            <form action="">
-
+            <form action="#" method="post" onsubmit="event.preventDefault();">
                 <div class="name">
-
                     <div class="input-control">
                         <input type="text" placeholder="First name" required class="sing_error" oninput="namevalidate()">
-                        <span class="error">Minim of 3 character...</span>
+                        <span class="error">Minimum of 3 characters</span>
                     </div>
 
                     <div class="input-control">
-                        <input type="text" placeholder="Nick name" required class="sing_error" oninput="nameBeforevalidate()">
-                        <span class="error">Minim of 4 character...</span>
+                        <input type="text" placeholder="Last name" required class="sing_error" oninput="nameBeforevalidate()">
+                        <span class="error">Minimum of 4 characters</span>
                     </div>
                 </div>
 
                 <div class="input-control">
-                    <input type="email"  placeholder="Your email" required class="sing_error" oninput="emailValidate()">
-                    <span class="error">Invalid email...</span>
+                    <input type="email" placeholder="Your email address" required class="sing_error" oninput="emailValidate()">
+                    <span class="error">Please enter a valid email</span>
                 </div>
-
-               <div class="input-control">
-                    <input type="password" placeholder="Password" required class="sing_error" oninput="passvalidate()">
-                    <span class="error">Minim 8 character...</span>
-               </div>
 
                 <div class="input-control">
-                    <input type="password" placeholder="Confirm Password" required class="sing_error" oninput="comparepass()">
-                    <span class="error">The password not responding...</span>
+                    <input type="password" placeholder="Choose a password" required class="sing_error" oninput="passvalidate()">
+                    <span class="error">Minimum 8 characters</span>
                 </div>
 
-                <button type="submit">Sign in</button>
+                <div class="input-control">
+                    <input type="password" placeholder="Confirm your password" required class="sing_error" oninput="comparepass()">
+                    <span class="error">Passwords do not match</span>
+                </div>
 
-                <span id="haveAccount">You have a account?</span>
+                <button type="submit"><i class="bi bi-person-check"></i> Sign Up</button>
+
+                <span id="haveAccount">Already have an account? Log in</span>
 
                 <div class="terms">
-                    <input type="checkbox" name="" id="checkbox2" required>
-                    <label for="checkbox2">I accept and confirm with all Terms and Privacy Politic</label>
+                    <input type="checkbox" id="checkbox2" required>
+                    <label for="checkbox2">I accept and agree with the Terms of Service &amp; Privacy Policy</label>
                 </div>
-
             </form>
-
         </div>
-
     </div>
 
+    <!-- Master Scripts -->
     <script src="js/app.js"></script>
 </body>
 </html>
